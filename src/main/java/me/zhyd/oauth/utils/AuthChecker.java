@@ -98,6 +98,9 @@ public class AuthChecker {
         if (source == AuthDefaultSource.HUAWEI) {
             code = callback.getAuthorization_code();
         }
+        if (source == AuthDefaultSource.WECHAT_MINI_PROGRAM_MOBILE) {
+            code = callback.getMobile_code();
+        }
         if (StringUtils.isEmpty(code)) {
             throw new AuthException(AuthResponseStatus.ILLEGAL_CODE, source);
         }

@@ -298,6 +298,64 @@ public enum AuthDefaultSource implements AuthSource {
             return AuthQqRequest.class;
         }
     },
+
+    WECHAT_MINI_PROGRAM_MOBILE {
+        @Override
+        public String authorize() {
+            throw new AuthException(AuthResponseStatus.UNSUPPORTED);
+        }
+
+        @Override
+        public String accessToken() {
+            return "https://api.weixin.qq.com/cgi-bin/token";
+        }
+
+        @Override
+        public String userInfo() {
+            return "https://api.weixin.qq.com/wxa/business/getuserphonenumber?access_token=";
+        }
+
+        @Override
+        public String refresh() {
+            throw new AuthException(AuthResponseStatus.UNSUPPORTED);
+        }
+
+        @Override
+        public Class<? extends AuthDefaultRequest> getTargetClass() {
+            return AuthWeChatMiniProgramMobileRequest.class;
+        }
+    },
+
+    /**
+     * 微信小程序
+     */
+    WECHAT_MINI_PROGRAM {
+        @Override
+        public String authorize() {
+            throw new AuthException(AuthResponseStatus.UNSUPPORTED);
+        }
+
+        @Override
+        public String accessToken() {
+            throw new AuthException(AuthResponseStatus.UNSUPPORTED);
+        }
+
+        @Override
+        public String userInfo() {
+            return "https://api.weixin.qq.com/sns/jscode2session";
+        }
+
+        @Override
+        public String refresh() {
+            throw new AuthException(AuthResponseStatus.UNSUPPORTED);
+        }
+
+        @Override
+        public Class<? extends AuthDefaultRequest> getTargetClass() {
+            return AuthWeChatMiniProgramRequest.class;
+        }
+    },
+
     /**
      * 微信开放平台
      */

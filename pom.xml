@@ -5,45 +5,19 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>me.zhyd.oauth</groupId>
-  <artifactId>JustAuth</artifactId>
+  <artifactId>MaxAuth</artifactId>
   <version>1.16.6</version>
 
-  <name>JustAuth</name>
+  <name>MaxAuth</name>
   <url>https://gitee.com/yadong.zhang/JustAuth</url>
   <description>
     小而全而美的第三方登录开源组件。目前已支持Github、Gitee、微博、钉钉、百度、Coding、腾讯云开发者平台、OSChina、支付宝、QQ、微信、淘宝、Google、Facebook、抖音、领英、小米、微软、今日头条、Teambition、StackOverflow、Pinterest、人人、华为、企业微信、酷家乐、Gitlab、美团、饿了么、推特、飞书、京东、阿里云、喜马拉雅、Amazon、Slack和Line等第三方平台的授权登录。 Login, so easy!
   </description>
 
-  <licenses>
-    <license>
-      <name>MIT</name>
-      <url>https://gitee.com/yadong.zhang/JustAuth/blob/master/LICENSE</url>
-    </license>
-  </licenses>
 
-  <scm>
-    <connection>scm:git:https://gitee.com/yadong.zhang/JustAuth.git</connection>
-    <developerConnection>scm:git:https://gitee.com/yadong.zhang/JustAuth.git</developerConnection>
-    <url>https://gitee.com/yadong.zhang/JustAuth</url>
-  </scm>
 
-  <developers>
-    <developer>
-      <name>Yadong.Zhang</name>
-      <email>yadong.zhang0415@gmail.com</email>
-      <url>https://www.zhyd.me</url>
-    </developer>
-    <developer>
-      <name>Yangkai.Shen</name>
-      <email>shenyangkai1994@gmail.com</email>
-      <url>https://xkcoding.com</url>
-    </developer>
-    <developer>
-      <name>Hongwei.Peng</name>
-      <email>pengisgood@gmail.com</email>
-      <url>https://github.com/pengisgood</url>
-    </developer>
-  </developers>
+
+
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

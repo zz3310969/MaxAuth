@@ -27,6 +27,12 @@ public class AuthCallback implements Serializable {
     private String code;
 
     /**
+     * 微信小程序手机号登录带来的js_code
+     */
+    private String mobile_code;
+
+
+    /**
      * 访问AuthorizeUrl后回调时带的参数auth_code，该参数目前只使用于支付宝登录
      */
     private String auth_code;

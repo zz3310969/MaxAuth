@@ -24,6 +24,11 @@ public class AuthUser implements Serializable {
      */
     private String uuid;
     /**
+     * 用户在当前开放平台的unionid
+     */
+    private String unionid;
+
+    /**
      * 用户名
      */
     private String username;
@@ -78,5 +83,15 @@ public class AuthUser implements Serializable {
      * 微信针对网页授权登录，增加了一个快照页的逻辑，快照页获取到的微信用户的 uid oid 和头像昵称都是虚拟的信息
      */
     private boolean snapshotUser;
+
+
+
+    /**
+     * 微信小程序附带属性
+     *
+     * @since 1.15.0
+     */
+    private String phoneNumber;
+    private String countryCode;
 
 }
